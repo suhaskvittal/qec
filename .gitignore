@@ -1,2 +1,4 @@
 pkgs/*
 libsrc/*
+__pycache__
+__pycache__/*
