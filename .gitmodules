@@ -1,0 +1,6 @@
+[submodule "qontra"]
+	path = qontra
+	url = git@github.com:suhaskvittal/quarch.git
+[submodule "qonstruct"]
+	path = qonstruct
+	url = git@github.com:suhaskvittal/qonstruct.git
