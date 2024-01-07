@@ -1,3 +1,8 @@
+"""
+    author: Suhas Vittal
+    date:   10 December 2023
+"""
+
 from qontra_params import *
 
 from qonstruct.parsing.cmd import *
