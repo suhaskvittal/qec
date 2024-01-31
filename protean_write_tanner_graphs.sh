@@ -5,10 +5,10 @@ QONTRA_CODES_FOLDER="qontra/data/tanner"
 
 declare -a TANNER_GRAPH_FILES=(
     "hy_cc/24_8.txt"
-    "hy_sc/3_8/168_16.txt"
-    "hy_sc/3_8/360_32.txt"
     "hy_sc/4_5/60_8.txt"
-    "hy_sc/4_5/180_20.txt"
+    "hy_sc/5_6/60_18.txt"
+    "hy_sc/4_7/84_20.txt"
+    "hy_sc/6_7/168_66.txt"
 )
 
 for file in ${TANNER_GRAPH_FILES[@]}
