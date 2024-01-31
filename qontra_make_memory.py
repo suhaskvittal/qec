@@ -6,6 +6,8 @@
 import qonstruct.io
 import qonstruct.scheduling
 
+from qonstruct.code_builder.surface_code import make_rotated
+
 from qonstruct.parsing.cmd import *
 from qonstruct.qes.manager import QesManager
 
@@ -18,9 +20,12 @@ output_file = try_get_string(arg_list, 'qes')
 rounds = try_get_int(arg_list, 'rounds')
 is_memory_x = 'x' in arg_list
 
-gr = qonstruct.io.read_tanner_graph_file(code_file)
-print(len(gr.graph['checks']['x']), len(gr.graph['checks']['z']))
-qonstruct.scheduling.compute_syndrome_extraction_schedule(gr)
+if code_file == 'rsc':
+    d = try_get_int(arg_list, 'd')
+    gr = make_rotated(d)
+else:
+    gr = qonstruct.io.read_tanner_graph_file(code_file)
+    qonstruct.scheduling.compute_syndrome_extraction_schedule(gr)
 
 mgr = QesManager(gr)
 mgr.memory = 'x' if is_memory_x else 'z'
