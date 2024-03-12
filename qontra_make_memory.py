@@ -14,10 +14,10 @@ from qonstruct.qes.manager import QesManager
 
 from sys import argv
 
-arg_list = parse(argv)
+arg_list = parse(argv[3:])
 
-code_file = try_get_string(arg_list, 'tanner')
-output_file = try_get_string(arg_list, 'qes')
+code_file = argv[1]
+output_file = argv[2]
 rounds = try_get_int(arg_list, 'rounds')
 is_memory_x = 'x' in arg_list
 
