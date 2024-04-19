@@ -47,8 +47,8 @@ def compute_distance(gr, is_x):
     measure_logical_qubits(circuit, gr, is_x)
     errors = circuit.search_for_undetectable_logical_errors(
                 dont_explore_edges_increasing_symptom_degree=False,
-                dont_explore_detection_event_sets_with_size_above=100,
-                dont_explore_edges_with_degree_above=10)
+                dont_explore_detection_event_sets_with_size_above=3,
+                dont_explore_edges_with_degree_above=3)
     return len(errors)
 
 code_folder = argv[1]
@@ -66,8 +66,7 @@ for f in _files:
     params = [int(x) for x in fbase.split('_')]
     n, k = params[0], params[1]
     if n > max_code_size:
-        os.remove(os.path.join(code_folder, f))
-        print(f'Deleted {f}')
+        print(f'Ignored {f}')
         continue
     if len(params) > 2 and not force_recompute:
         # No point in renaming this file.
@@ -75,6 +74,7 @@ for f in _files:
         files.append((f, n, k, dx, dz))
         continue
     gr = qonstruct.io.read_tanner_graph_file(os.path.join(code_folder, f))
+    print(f'code = {f}')
     try:
         dz = compute_distance(gr, True)
         if dist_is_eq:
@@ -84,7 +84,7 @@ for f in _files:
     except ValueError as e:
         print(f'encountered {e}: code distance for {f} could not be computed')
         continue
-    print(f'code = {f}: dx = {dx}, dz = {dz}')
+    print(f'\tdx = {dx}, dz = {dz}')
     files.append((f, n, k, dx, dz))
 
 # Now we will go back through and (1) remove all files with dx or dz less than dmin,
@@ -93,11 +93,11 @@ print('----------------------')
 files.sort(key=lambda x: x[1]) 
 dzmin, dxmin = dmin, dmin
 for (f, n, k, dx, dz) in files:
-    if dz < dzmin or dx < dxmin:
+    if dz < dzmin and dx < dxmin:
         os.remove(os.path.join(code_folder, f))
         print(f'Deleted {f}')
     else:
-        dzmin, dxmin = dz, dx
+        dzmin, dxmin = max(dzmin, dz), max(dxmin, dx)
         os.rename(os.path.join(code_folder, f), f'{code_folder}/{n}_{k}_{dx}_{dz}.txt')
         print(f'Renamed {f} to {n}_{k}_{dx}_{dz}')
     

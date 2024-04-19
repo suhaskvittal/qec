@@ -3,17 +3,16 @@
 QONSTRUCT_CODES_FOLDER="qonstruct/codes"
 QONTRA_CODES_FOLDER="qontra/data/tanner"
 
+mkdir $QONTRA_CODES_FOLDER/hycc
+mkdir $QONTRA_CODES_FOLDER/hysc
+
 declare -a CODE_FOLDERS=(
 # SURFACE CODES
-    "hysc/3_8"
     "hysc/4_5"
     "hysc/4_6"
     "hysc/5_5"
     "hysc/5_6"
-    "hysc/6_6"
 # COLOR CODES
-    "hycc/3_8"
-    "hycc/3_10"
     "hycc/4_6"
     "hycc/4_8"
     "hycc/4_10"

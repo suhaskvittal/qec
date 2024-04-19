@@ -49,3 +49,4 @@ if 'use-flags' in arg_list:
 mgr.fopen(output_file)
 mgr.write_memory_experiment(rounds)
 mgr.fclose()
+
