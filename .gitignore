@@ -3,3 +3,4 @@ libsrc/*
 __pycache__
 __pycache__/*
 todo.txt
+codes/*

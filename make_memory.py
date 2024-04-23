@@ -7,7 +7,7 @@ import qonstruct.io
 import qonstruct.scheduling
 
 from qonstruct.code_builder.surface_code import make_rotated
-from qonstruct.code_builder.color_code import make_hexagonal, make_hycc_d4
+from qonstruct.code_builder.color_code import make_hexagonal
 
 from qonstruct.parsing.cmd import *
 from qonstruct.qes.manager import QesManager
@@ -27,8 +27,6 @@ if code_file == 'rsc':
 elif code_file == 'hexcc':
     d = try_get_int(arg_list, 'd')
     gr = make_hexagonal(d)
-elif code_file == 'hycc':
-    gr = make_hycc_d4()
 else:
     gr = qonstruct.io.read_tanner_graph_file(code_file)
     qonstruct.scheduling.compute_syndrome_extraction_schedule(gr)

@@ -49,6 +49,8 @@ def compute_distance(gr, is_x):
                 dont_explore_edges_increasing_symptom_degree=False,
                 dont_explore_detection_event_sets_with_size_above=3,
                 dont_explore_edges_with_degree_above=3)
+    if len(errors) < 12:
+        print(errors)
     return len(errors)
 
 code_folder = argv[1]
@@ -57,6 +59,7 @@ max_code_size = int(argv[3])
 
 force_recompute = '-recompute' in argv
 dist_is_eq = '-dist-eq' in argv
+no_delete = '-no-delete' in argv
 
 files = []
 
@@ -93,7 +96,7 @@ print('----------------------')
 files.sort(key=lambda x: x[1]) 
 dzmin, dxmin = dmin, dmin
 for (f, n, k, dx, dz) in files:
-    if dz < dzmin and dx < dxmin:
+    if dz < dzmin and dx < dxmin and not no_delete:
         os.remove(os.path.join(code_folder, f))
         print(f'Deleted {f}')
     else:
