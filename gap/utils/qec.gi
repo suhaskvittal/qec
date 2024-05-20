@@ -21,9 +21,16 @@ OperatorWeight :=
 
 ComputeStabilizerGenerators :=
     function(check_list)
-        local M;
-        M := SemiEchelonMat(check_list);
-        return check_list{ Filtered(M.heads, x -> x > 0) };
+        local curr, tmp, V, x;
+        curr := [ ];
+        for x in check_list do
+            tmp := Concatenation(curr, [x]);
+            V := VectorSpace(GF(2), tmp);
+            if Dimension(V) > Length(curr) then
+                Add(curr, x);
+            fi;
+        od;
+        return curr;
     end;
 
 AreCommuting :=

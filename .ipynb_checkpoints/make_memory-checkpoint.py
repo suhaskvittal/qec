@@ -7,7 +7,7 @@ import qonstruct.io
 import qonstruct.scheduling
 
 from qonstruct.code_builder.surface_code import make_rotated
-from qonstruct.code_builder.color_code import make_hexagonal, color_tanner_graph
+from qonstruct.code_builder.color_code import make_hexagonal
 
 from qonstruct.parsing.cmd import *
 from qonstruct.qes.manager import QesManager
@@ -31,9 +31,6 @@ else:
     gr = qonstruct.io.read_tanner_graph_file(code_file)
     qonstruct.scheduling.compute_syndrome_extraction_schedule(gr)
 print('Code has %d qubits and %d checks' % (len(gr.graph['data_qubits']), len(gr.graph['checks']['all'])))
-
-if 'color-checks' in arg_list:
-    color_tanner_graph(gr)
 
 mgr = QesManager(gr)
 mgr.memory = 'x' if is_memory_x else 'z'

@@ -109,6 +109,9 @@ while i <= Length(lins) do
                         plaquettes,
                         operators,
                         operators);
+    # Write faces to a file.
+    vf_arr := TranslateFaces(G_mod_H, all_faces);
+    WriteFacesToFile(FaceFilename(code_folder, n_data, n_log), vf_arr);
 
     i := i+1;
 od;

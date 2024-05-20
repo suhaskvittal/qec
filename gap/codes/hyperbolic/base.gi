@@ -38,6 +38,33 @@ ComputeIndicatorVectorsCC :=
         return check_list;
     end;
 
+TranslateFaces :=
+    function(G, faces)
+        local face_list, f, vf, i, x, y, j;
+
+        face_list := [];
+        for f in faces do
+            vf := [];
+            for x in f do
+                Add(vf, 0);
+            od;
+            i := 1;
+            for x in Elements(G) do
+                j := 1;
+                for y in f do
+                    if x = y then
+                        vf[j] := i;
+                        break;
+                    fi;
+                    j := j+1;
+                od;
+                i := i+1;
+            od;
+            AddSet(face_list, vf);
+        od;
+        return face_list;
+    end;
+
 CodeFilename :=
     function(folder, n, k)
         local filename;
@@ -52,7 +79,7 @@ Rot1 :=
         arr := [];
         i := 0;
         while i < Order(b) do
-            AddSet(arr, b^i);
+            Add(arr, b^i);
             i := i+1;
         od;
         return arr;
@@ -66,10 +93,10 @@ Rot2 :=
         k := 0;
         while i < 2*Order(a*b) do
             if i mod 2 = 0 then
-                AddSet(arr, (a*b)^k);
+                Add(arr, (a*b)^k);
                 k := k+1;
             else
-                AddSet(arr, (a*b)^k * a);
+                Add(arr, (a*b)^k * a);
             fi;
             i := i+1;
         od;
@@ -144,5 +171,33 @@ TilingIsBipartite :=
             AddSet(visited, i);
         od;
         return true;
+    end;
+
+FaceFilename :=
+    function(folder, n, k)
+        local filename;
+        filename := Concatenation(folder, "/",  String(n), "_", String(k), ".faces.txt");
+        return filename;
+    end;
+
+WriteFacesToFile :=
+    function(filename, faces)
+        local fout, vf, i, line;
+
+        fout := IO_File(filename, "w");
+        Print("Creating file ", filename, ": ", IsFile(fout), "\n");
+
+        for vf in faces do
+            i := 1;
+            line := "";
+            while i <= Length(vf) do
+                if i > 1 then
+                    line := Concatenation(line, ",");
+                fi;
+                line := Concatenation(line, String(vf[i]-1));
+                i := i+1;
+            od;
+            IO_WriteLine(fout, line);
+        od;
     end;
 

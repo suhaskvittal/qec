@@ -1,16 +1,759 @@
-code = 168_12_6_6.txt
-[stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(4), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(5), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(3), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=10, target_range_end=11, targets_in_range=(stim.GateTargetWithCoords(gate_target=3, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(4), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(73), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(31), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=8, target_range_end=9, targets_in_range=(stim.GateTargetWithCoords(gate_target=31, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(5), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(74), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(35), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=13, target_range_end=14, targets_in_range=(stim.GateTargetWithCoords(gate_target=35, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(15), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(16), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(17), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(16), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=38, target_range_end=39, targets_in_range=(stim.GateTargetWithCoords(gate_target=16, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(15), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(16), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(73), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(55), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=36, target_range_end=37, targets_in_range=(stim.GateTargetWithCoords(gate_target=55, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(17), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(74), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(59), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=41, target_range_end=42, targets_in_range=(stim.GateTargetWithCoords(gate_target=59, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),))]
-	dx = 6, dz = 6
-code = 168_8_12_12.txt
-	dx = 12, dz = 12
-code = 168_12.txt
-[stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(4), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(5), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(3), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=10, target_range_end=11, targets_in_range=(stim.GateTargetWithCoords(gate_target=3, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(3), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(4), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(73), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(31), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=8, target_range_end=9, targets_in_range=(stim.GateTargetWithCoords(gate_target=31, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(5), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(72), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(35), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=13, target_range_end=14, targets_in_range=(stim.GateTargetWithCoords(gate_target=35, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(12), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(13), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(14), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(2), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(14), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=31, target_range_end=32, targets_in_range=(stim.GateTargetWithCoords(gate_target=14, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(12), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(73), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(2), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(48), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=28, target_range_end=29, targets_in_range=(stim.GateTargetWithCoords(gate_target=48, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(13), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(14), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(72), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(2), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(3), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(52), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=33, target_range_end=34, targets_in_range=(stim.GateTargetWithCoords(gate_target=52, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),))]
-	dx = 6, dz = 6
-code = 168_16.txt
-[stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(24), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(25), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(26), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(7), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(5), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=59, target_range_end=60, targets_in_range=(stim.GateTargetWithCoords(gate_target=5, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(24), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(25), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(7), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(73), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=57, target_range_end=58, targets_in_range=(stim.GateTargetWithCoords(gate_target=73, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),)), stim.ExplainedError(dem_error_terms=(stim.DemTargetWithCoords(dem_target=stim.target_relative_detector_id(26), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(6), coords=[]),stim.DemTargetWithCoords(dem_target=stim.target_logical_observable_id(7), coords=[]),), circuit_error_locations=(stim.CircuitErrorLocation(tick_offset=0, flipped_pauli_product=(stim.GateTargetWithCoords(gate_target=stim.target_z(77), coords=[]),), flipped_measurement=stim.FlippedMeasurement(record_index=18446744073709551615, observable=()), instruction_targets=stim.CircuitTargetsInsideInstruction(gate='Z_ERROR', args=[0.1], target_range_start=62, target_range_end=63, targets_in_range=(stim.GateTargetWithCoords(gate_target=77, coords=[]),)), stack_frames=(stim.CircuitErrorLocationStackFrame(instruction_offset=17, iteration_index=0, instruction_repetitions_arg=0),)),))]
-	dx = 3, dz = 3
-----------------------
-Renamed 168_12_6_6.txt to 168_12_6_6
-Renamed 168_8_12_12.txt to 168_8_12_12
-Renamed 168_12.txt to 168_12_6_6
-Renamed 168_16.txt to 168_16_3_3
+computed 3-coloring
+Seed Code parameters: n=24, k=4
+Adding boundary checks for 0, 1, rg, [0, 2, 1, 5, 4], [9, 11, 10, 14, 13]:
+	0,2,1,9,11,10
+	1,5,4,10,14,13
+Adding boundary checks for 0, 12, rb, [0, 2, 3, 7, 8], [36, 38, 39, 43, 44]:
+	0,2,3,36,38,39
+	3,7,8,39,43,44
+Adding boundary checks for 0, 18, rg, [0, 2, 1, 5, 4], [54, 56, 55, 59, 58]:
+	0,2,1,54,56,55
+	1,5,4,55,59,58
+Adding boundary checks for 0, 19, rg, [0, 2, 1, 5, 4], [63, 65, 64, 68, 67]:
+	0,2,1,63,65,64
+	1,5,4,64,68,67
+Adding boundary checks for 0, 14, gb, [4, 5, 6, 7, 8], [94, 95, 96, 97, 98]:
+	4,5,6,94,95,96
+	6,7,8,96,97,98
+Adding boundary checks for 1, 13, rb, [9, 11, 12, 16, 17], [45, 47, 48, 52, 53]:
+	9,11,12,45,47,48
+	12,16,17,48,52,53
+Adding boundary checks for 1, 18, rg, [9, 11, 10, 14, 13], [54, 56, 55, 59, 58]:
+	9,11,10,54,56,55
+	10,14,13,55,59,58
+Adding boundary checks for 1, 19, rg, [9, 11, 10, 14, 13], [63, 65, 64, 68, 67]:
+	9,11,10,63,65,64
+	10,14,13,64,68,67
+Adding boundary checks for 1, 15, gb, [13, 14, 15, 16, 17], [103, 104, 105, 106, 107]:
+	13,14,15,103,104,105
+	15,16,17,105,106,107
+Adding boundary checks for 6, 7, rg, [18, 20, 19, 23, 22], [27, 29, 28, 32, 31]:
+	18,20,19,27,29,28
+	19,23,22,28,32,31
+Adding boundary checks for 6, 12, rg, [18, 20, 19, 23, 22], [36, 38, 37, 41, 40]:
+	18,20,19,36,38,37
+	19,23,22,37,41,40
+Adding boundary checks for 6, 13, rg, [18, 20, 19, 23, 22], [45, 47, 46, 50, 49]:
+	18,20,19,45,47,46
+	19,23,22,46,50,49
+Adding boundary checks for 6, 18, rb, [18, 20, 21, 25, 26], [54, 56, 57, 61, 62]:
+	18,20,21,54,56,57
+	21,25,26,57,61,62
+Adding boundary checks for 6, 23, gb, [22, 23, 24, 25, 26], [211, 212, 213, 214, 215]:
+	22,23,24,211,212,213
+	24,25,26,213,214,215
+Adding boundary checks for 7, 12, rg, [27, 29, 28, 32, 31], [36, 38, 37, 41, 40]:
+	27,29,28,36,38,37
+	28,32,31,37,41,40
+Adding boundary checks for 7, 13, rg, [27, 29, 28, 32, 31], [45, 47, 46, 50, 49]:
+	27,29,28,45,47,46
+	28,32,31,46,50,49
+Adding boundary checks for 7, 19, rb, [27, 29, 30, 34, 35], [63, 65, 66, 70, 71]:
+	27,29,30,63,65,66
+	30,34,35,66,70,71
+Adding boundary checks for 7, 22, gb, [31, 32, 33, 34, 35], [202, 203, 204, 205, 206]:
+	31,32,33,202,203,204
+	33,34,35,204,205,206
+Adding boundary checks for 12, 13, rg, [36, 38, 37, 41, 40], [45, 47, 46, 50, 49]:
+	36,38,37,45,47,46
+	37,41,40,46,50,49
+Adding boundary checks for 18, 19, rg, [54, 56, 55, 59, 58], [63, 65, 64, 68, 67]:
+	54,56,55,63,65,64
+	55,59,58,64,68,67
+Adding boundary checks for 8, 18, gb, [76, 77, 78, 79, 80], [58, 59, 60, 61, 62]:
+	76,77,78,58,59,60
+	78,79,80,60,61,62
+Adding boundary checks for 8, 9, rg, [72, 74, 73, 77, 76], [81, 83, 82, 86, 85]:
+	72,74,73,81,83,82
+	73,77,76,82,86,85
+Adding boundary checks for 8, 14, rg, [72, 74, 73, 77, 76], [90, 92, 91, 95, 94]:
+	72,74,73,90,92,91
+	73,77,76,91,95,94
+Adding boundary checks for 8, 15, rg, [72, 74, 73, 77, 76], [99, 101, 100, 104, 103]:
+	72,74,73,99,101,100
+	73,77,76,100,104,103
+Adding boundary checks for 8, 20, rb, [72, 74, 75, 79, 80], [162, 164, 165, 169, 170]:
+	72,74,75,162,164,165
+	75,79,80,165,169,170
+Adding boundary checks for 9, 19, gb, [85, 86, 87, 88, 89], [67, 68, 69, 70, 71]:
+	85,86,87,67,68,69
+	87,88,89,69,70,71
+Adding boundary checks for 9, 14, rg, [81, 83, 82, 86, 85], [90, 92, 91, 95, 94]:
+	81,83,82,90,92,91
+	82,86,85,91,95,94
+Adding boundary checks for 9, 15, rg, [81, 83, 82, 86, 85], [99, 101, 100, 104, 103]:
+	81,83,82,99,101,100
+	82,86,85,100,104,103
+Adding boundary checks for 9, 21, rb, [81, 83, 84, 88, 89], [171, 173, 174, 178, 179]:
+	81,83,84,171,173,174
+	84,88,89,174,178,179
+Adding boundary checks for 14, 15, rg, [90, 92, 91, 95, 94], [99, 101, 100, 104, 103]:
+	90,92,91,99,101,100
+	91,95,94,100,104,103
+Adding boundary checks for 3, 14, rb, [108, 110, 111, 115, 116], [90, 92, 93, 97, 98]:
+	108,110,111,90,92,93
+	111,115,116,93,97,98
+Adding boundary checks for 3, 16, gb, [112, 113, 114, 115, 116], [130, 131, 132, 133, 134]:
+	112,113,114,130,131,132
+	114,115,116,132,133,134
+Adding boundary checks for 3, 20, rg, [108, 110, 109, 113, 112], [162, 164, 163, 167, 166]:
+	108,110,109,162,164,163
+	109,113,112,163,167,166
+Adding boundary checks for 3, 21, rg, [108, 110, 109, 113, 112], [171, 173, 172, 176, 175]:
+	108,110,109,171,173,172
+	109,113,112,172,176,175
+Adding boundary checks for 4, 12, gb, [121, 122, 123, 124, 125], [40, 41, 42, 43, 44]:
+	121,122,123,40,41,42
+	123,124,125,42,43,44
+Adding boundary checks for 4, 16, rb, [117, 119, 120, 124, 125], [126, 128, 129, 133, 134]:
+	117,119,120,126,128,129
+	120,124,125,129,133,134
+Adding boundary checks for 4, 5, rg, [117, 119, 118, 122, 121], [144, 146, 145, 149, 148]:
+	117,119,118,144,146,145
+	118,122,121,145,149,148
+Adding boundary checks for 4, 22, rg, [117, 119, 118, 122, 121], [198, 200, 199, 203, 202]:
+	117,119,118,198,200,199
+	118,122,121,199,203,202
+Adding boundary checks for 4, 23, rg, [117, 119, 118, 122, 121], [207, 209, 208, 212, 211]:
+	117,119,118,207,209,208
+	118,122,121,208,212,211
+Adding boundary checks for 16, 17, rg, [126, 128, 127, 131, 130], [153, 155, 154, 158, 157]:
+	126,128,127,153,155,154
+	127,131,130,154,158,157
+Adding boundary checks for 2, 15, rb, [135, 137, 138, 142, 143], [99, 101, 102, 106, 107]:
+	135,137,138,99,101,102
+	138,142,143,102,106,107
+Adding boundary checks for 2, 3, rg, [135, 137, 136, 140, 139], [108, 110, 109, 113, 112]:
+	135,137,136,108,110,109
+	136,140,139,109,113,112
+Adding boundary checks for 2, 17, gb, [139, 140, 141, 142, 143], [157, 158, 159, 160, 161]:
+	139,140,141,157,158,159
+	141,142,143,159,160,161
+Adding boundary checks for 2, 20, rg, [135, 137, 136, 140, 139], [162, 164, 163, 167, 166]:
+	135,137,136,162,164,163
+	136,140,139,163,167,166
+Adding boundary checks for 2, 21, rg, [135, 137, 136, 140, 139], [171, 173, 172, 176, 175]:
+	135,137,136,171,173,172
+	136,140,139,172,176,175
+Adding boundary checks for 5, 13, gb, [148, 149, 150, 151, 152], [49, 50, 51, 52, 53]:
+	148,149,150,49,50,51
+	150,151,152,51,52,53
+Adding boundary checks for 5, 17, rb, [144, 146, 147, 151, 152], [153, 155, 156, 160, 161]:
+	144,146,147,153,155,156
+	147,151,152,156,160,161
+Adding boundary checks for 5, 22, rg, [144, 146, 145, 149, 148], [198, 200, 199, 203, 202]:
+	144,146,145,198,200,199
+	145,149,148,199,203,202
+Adding boundary checks for 5, 23, rg, [144, 146, 145, 149, 148], [207, 209, 208, 212, 211]:
+	144,146,145,207,209,208
+	145,149,148,208,212,211
+Adding boundary checks for 20, 21, rg, [162, 164, 163, 167, 166], [171, 173, 172, 176, 175]:
+	162,164,163,171,173,172
+	163,167,166,172,176,175
+Adding boundary checks for 10, 16, rg, [180, 182, 181, 185, 184], [126, 128, 127, 131, 130]:
+	180,182,181,126,128,127
+	181,185,184,127,131,130
+Adding boundary checks for 10, 17, rg, [180, 182, 181, 185, 184], [153, 155, 154, 158, 157]:
+	180,182,181,153,155,154
+	181,185,184,154,158,157
+Adding boundary checks for 10, 20, gb, [184, 185, 186, 187, 188], [166, 167, 168, 169, 170]:
+	184,185,186,166,167,168
+	186,187,188,168,169,170
+Adding boundary checks for 10, 11, rg, [180, 182, 181, 185, 184], [189, 191, 190, 194, 193]:
+	180,182,181,189,191,190
+	181,185,184,190,194,193
+Adding boundary checks for 10, 23, rb, [180, 182, 183, 187, 188], [207, 209, 210, 214, 215]:
+	180,182,183,207,209,210
+	183,187,188,210,214,215
+Adding boundary checks for 11, 16, rg, [189, 191, 190, 194, 193], [126, 128, 127, 131, 130]:
+	189,191,190,126,128,127
+	190,194,193,127,131,130
+Adding boundary checks for 11, 17, rg, [189, 191, 190, 194, 193], [153, 155, 154, 158, 157]:
+	189,191,190,153,155,154
+	190,194,193,154,158,157
+Adding boundary checks for 11, 21, gb, [193, 194, 195, 196, 197], [175, 176, 177, 178, 179]:
+	193,194,195,175,176,177
+	195,196,197,177,178,179
+Adding boundary checks for 11, 22, rb, [189, 191, 192, 196, 197], [198, 200, 201, 205, 206]:
+	189,191,192,198,200,201
+	192,196,197,201,205,206
+Adding boundary checks for 22, 23, rg, [198, 200, 199, 203, 202], [207, 209, 208, 212, 211]:
+	198,200,199,207,209,208
+	199,203,202,208,212,211
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[0, 2, 1, 54, 56, 55], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[1, 5, 4, 55, 59, 58], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[0, 2, 1, 63, 65, 64], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[1, 5, 4, 64, 68, 67], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[9, 11, 10, 54, 56, 55], comm=[9, 11, 10]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[10, 14, 13, 55, 59, 58], comm=[10]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[9, 11, 10, 63, 65, 64], comm=[9, 11, 10]
+Anti-commutation between checks. X=[0, 2, 1, 9, 11, 10], Z=[10, 14, 13, 64, 68, 67], comm=[10]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[0, 2, 1, 54, 56, 55], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[1, 5, 4, 55, 59, 58], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[0, 2, 1, 63, 65, 64], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[1, 5, 4, 64, 68, 67], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[9, 11, 10, 54, 56, 55], comm=[10]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[10, 14, 13, 55, 59, 58], comm=[10, 14, 13]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[9, 11, 10, 63, 65, 64], comm=[10]
+Anti-commutation between checks. X=[1, 5, 4, 10, 14, 13], Z=[10, 14, 13, 64, 68, 67], comm=[10, 14, 13]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[0, 2, 1, 9, 11, 10], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[1, 5, 4, 10, 14, 13], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[0, 2, 1, 63, 65, 64], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[1, 5, 4, 64, 68, 67], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[9, 11, 10, 54, 56, 55], comm=[54, 56, 55]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[10, 14, 13, 55, 59, 58], comm=[55]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[54, 56, 55, 63, 65, 64], comm=[54, 56, 55]
+Anti-commutation between checks. X=[0, 2, 1, 54, 56, 55], Z=[55, 59, 58, 64, 68, 67], comm=[55]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[0, 2, 1, 9, 11, 10], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[1, 5, 4, 10, 14, 13], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[0, 2, 1, 63, 65, 64], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[1, 5, 4, 64, 68, 67], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[9, 11, 10, 54, 56, 55], comm=[55]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[10, 14, 13, 55, 59, 58], comm=[55, 59, 58]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[54, 56, 55, 63, 65, 64], comm=[55]
+Anti-commutation between checks. X=[1, 5, 4, 55, 59, 58], Z=[55, 59, 58, 64, 68, 67], comm=[55, 59, 58]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[0, 2, 1, 9, 11, 10], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[1, 5, 4, 10, 14, 13], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[0, 2, 1, 54, 56, 55], comm=[0, 2, 1]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[1, 5, 4, 55, 59, 58], comm=[1]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[9, 11, 10, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[10, 14, 13, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[54, 56, 55, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[0, 2, 1, 63, 65, 64], Z=[55, 59, 58, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[0, 2, 1, 9, 11, 10], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[1, 5, 4, 10, 14, 13], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[0, 2, 1, 54, 56, 55], comm=[1]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[1, 5, 4, 55, 59, 58], comm=[1, 5, 4]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[9, 11, 10, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[10, 14, 13, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[54, 56, 55, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[1, 5, 4, 64, 68, 67], Z=[55, 59, 58, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[0, 2, 1, 9, 11, 10], comm=[9, 11, 10]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[1, 5, 4, 10, 14, 13], comm=[10]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[0, 2, 1, 54, 56, 55], comm=[54, 56, 55]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[1, 5, 4, 55, 59, 58], comm=[55]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[9, 11, 10, 63, 65, 64], comm=[9, 11, 10]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[10, 14, 13, 64, 68, 67], comm=[10]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[54, 56, 55, 63, 65, 64], comm=[54, 56, 55]
+Anti-commutation between checks. X=[9, 11, 10, 54, 56, 55], Z=[55, 59, 58, 64, 68, 67], comm=[55]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[0, 2, 1, 9, 11, 10], comm=[10]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[1, 5, 4, 10, 14, 13], comm=[10, 14, 13]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[0, 2, 1, 54, 56, 55], comm=[55]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[1, 5, 4, 55, 59, 58], comm=[55, 59, 58]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[9, 11, 10, 63, 65, 64], comm=[10]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[10, 14, 13, 64, 68, 67], comm=[10, 14, 13]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[54, 56, 55, 63, 65, 64], comm=[55]
+Anti-commutation between checks. X=[10, 14, 13, 55, 59, 58], Z=[55, 59, 58, 64, 68, 67], comm=[55, 59, 58]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[0, 2, 1, 9, 11, 10], comm=[9, 11, 10]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[1, 5, 4, 10, 14, 13], comm=[10]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[0, 2, 1, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[1, 5, 4, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[9, 11, 10, 54, 56, 55], comm=[9, 11, 10]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[10, 14, 13, 55, 59, 58], comm=[10]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[54, 56, 55, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[9, 11, 10, 63, 65, 64], Z=[55, 59, 58, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[0, 2, 1, 9, 11, 10], comm=[10]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[1, 5, 4, 10, 14, 13], comm=[10, 14, 13]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[0, 2, 1, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[1, 5, 4, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[9, 11, 10, 54, 56, 55], comm=[10]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[10, 14, 13, 55, 59, 58], comm=[10, 14, 13]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[54, 56, 55, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[10, 14, 13, 64, 68, 67], Z=[55, 59, 58, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[18, 20, 19, 36, 38, 37], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[19, 23, 22, 37, 41, 40], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[18, 20, 19, 45, 47, 46], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[19, 23, 22, 46, 50, 49], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[27, 29, 28, 36, 38, 37], comm=[27, 29, 28]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[28, 32, 31, 37, 41, 40], comm=[28]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[27, 29, 28, 45, 47, 46], comm=[27, 29, 28]
+Anti-commutation between checks. X=[18, 20, 19, 27, 29, 28], Z=[28, 32, 31, 46, 50, 49], comm=[28]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[18, 20, 19, 36, 38, 37], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[19, 23, 22, 37, 41, 40], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[18, 20, 19, 45, 47, 46], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[19, 23, 22, 46, 50, 49], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[27, 29, 28, 36, 38, 37], comm=[28]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[28, 32, 31, 37, 41, 40], comm=[28, 32, 31]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[27, 29, 28, 45, 47, 46], comm=[28]
+Anti-commutation between checks. X=[19, 23, 22, 28, 32, 31], Z=[28, 32, 31, 46, 50, 49], comm=[28, 32, 31]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[18, 20, 19, 27, 29, 28], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[19, 23, 22, 28, 32, 31], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[18, 20, 19, 45, 47, 46], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[19, 23, 22, 46, 50, 49], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[27, 29, 28, 36, 38, 37], comm=[36, 38, 37]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[28, 32, 31, 37, 41, 40], comm=[37]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[36, 38, 37, 45, 47, 46], comm=[36, 38, 37]
+Anti-commutation between checks. X=[18, 20, 19, 36, 38, 37], Z=[37, 41, 40, 46, 50, 49], comm=[37]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[18, 20, 19, 27, 29, 28], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[19, 23, 22, 28, 32, 31], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[18, 20, 19, 45, 47, 46], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[19, 23, 22, 46, 50, 49], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[27, 29, 28, 36, 38, 37], comm=[37]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[28, 32, 31, 37, 41, 40], comm=[37, 41, 40]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[36, 38, 37, 45, 47, 46], comm=[37]
+Anti-commutation between checks. X=[19, 23, 22, 37, 41, 40], Z=[37, 41, 40, 46, 50, 49], comm=[37, 41, 40]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[18, 20, 19, 27, 29, 28], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[19, 23, 22, 28, 32, 31], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[18, 20, 19, 36, 38, 37], comm=[18, 20, 19]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[19, 23, 22, 37, 41, 40], comm=[19]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[27, 29, 28, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[28, 32, 31, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[36, 38, 37, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[18, 20, 19, 45, 47, 46], Z=[37, 41, 40, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[18, 20, 19, 27, 29, 28], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[19, 23, 22, 28, 32, 31], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[18, 20, 19, 36, 38, 37], comm=[19]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[19, 23, 22, 37, 41, 40], comm=[19, 23, 22]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[27, 29, 28, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[28, 32, 31, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[36, 38, 37, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[19, 23, 22, 46, 50, 49], Z=[37, 41, 40, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[18, 20, 19, 27, 29, 28], comm=[27, 29, 28]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[19, 23, 22, 28, 32, 31], comm=[28]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[18, 20, 19, 36, 38, 37], comm=[36, 38, 37]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[19, 23, 22, 37, 41, 40], comm=[37]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[27, 29, 28, 45, 47, 46], comm=[27, 29, 28]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[28, 32, 31, 46, 50, 49], comm=[28]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[36, 38, 37, 45, 47, 46], comm=[36, 38, 37]
+Anti-commutation between checks. X=[27, 29, 28, 36, 38, 37], Z=[37, 41, 40, 46, 50, 49], comm=[37]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[18, 20, 19, 27, 29, 28], comm=[28]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[19, 23, 22, 28, 32, 31], comm=[28, 32, 31]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[18, 20, 19, 36, 38, 37], comm=[37]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[19, 23, 22, 37, 41, 40], comm=[37, 41, 40]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[27, 29, 28, 45, 47, 46], comm=[28]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[28, 32, 31, 46, 50, 49], comm=[28, 32, 31]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[36, 38, 37, 45, 47, 46], comm=[37]
+Anti-commutation between checks. X=[28, 32, 31, 37, 41, 40], Z=[37, 41, 40, 46, 50, 49], comm=[37, 41, 40]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[18, 20, 19, 27, 29, 28], comm=[27, 29, 28]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[19, 23, 22, 28, 32, 31], comm=[28]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[18, 20, 19, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[19, 23, 22, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[27, 29, 28, 36, 38, 37], comm=[27, 29, 28]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[28, 32, 31, 37, 41, 40], comm=[28]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[36, 38, 37, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[27, 29, 28, 45, 47, 46], Z=[37, 41, 40, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[18, 20, 19, 27, 29, 28], comm=[28]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[19, 23, 22, 28, 32, 31], comm=[28, 32, 31]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[18, 20, 19, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[19, 23, 22, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[27, 29, 28, 36, 38, 37], comm=[28]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[28, 32, 31, 37, 41, 40], comm=[28, 32, 31]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[36, 38, 37, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[28, 32, 31, 46, 50, 49], Z=[37, 41, 40, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[18, 20, 19, 36, 38, 37], comm=[36, 38, 37]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[19, 23, 22, 37, 41, 40], comm=[37]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[18, 20, 19, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[19, 23, 22, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[27, 29, 28, 36, 38, 37], comm=[36, 38, 37]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[28, 32, 31, 37, 41, 40], comm=[37]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[27, 29, 28, 45, 47, 46], comm=[45, 47, 46]
+Anti-commutation between checks. X=[36, 38, 37, 45, 47, 46], Z=[28, 32, 31, 46, 50, 49], comm=[46]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[18, 20, 19, 36, 38, 37], comm=[37]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[19, 23, 22, 37, 41, 40], comm=[37, 41, 40]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[18, 20, 19, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[19, 23, 22, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[27, 29, 28, 36, 38, 37], comm=[37]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[28, 32, 31, 37, 41, 40], comm=[37, 41, 40]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[27, 29, 28, 45, 47, 46], comm=[46]
+Anti-commutation between checks. X=[37, 41, 40, 46, 50, 49], Z=[28, 32, 31, 46, 50, 49], comm=[46, 50, 49]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[0, 2, 1, 54, 56, 55], comm=[54, 56, 55]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[1, 5, 4, 55, 59, 58], comm=[55]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[0, 2, 1, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[1, 5, 4, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[9, 11, 10, 54, 56, 55], comm=[54, 56, 55]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[10, 14, 13, 55, 59, 58], comm=[55]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[9, 11, 10, 63, 65, 64], comm=[63, 65, 64]
+Anti-commutation between checks. X=[54, 56, 55, 63, 65, 64], Z=[10, 14, 13, 64, 68, 67], comm=[64]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[0, 2, 1, 54, 56, 55], comm=[55]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[1, 5, 4, 55, 59, 58], comm=[55, 59, 58]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[0, 2, 1, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[1, 5, 4, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[9, 11, 10, 54, 56, 55], comm=[55]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[10, 14, 13, 55, 59, 58], comm=[55, 59, 58]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[9, 11, 10, 63, 65, 64], comm=[64]
+Anti-commutation between checks. X=[55, 59, 58, 64, 68, 67], Z=[10, 14, 13, 64, 68, 67], comm=[64, 68, 67]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[72, 74, 73, 90, 92, 91], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[73, 77, 76, 91, 95, 94], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[72, 74, 73, 99, 101, 100], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[73, 77, 76, 100, 104, 103], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[81, 83, 82, 90, 92, 91], comm=[81, 83, 82]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[82, 86, 85, 91, 95, 94], comm=[82]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[81, 83, 82, 99, 101, 100], comm=[81, 83, 82]
+Anti-commutation between checks. X=[72, 74, 73, 81, 83, 82], Z=[82, 86, 85, 100, 104, 103], comm=[82]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[72, 74, 73, 90, 92, 91], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[73, 77, 76, 91, 95, 94], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[72, 74, 73, 99, 101, 100], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[73, 77, 76, 100, 104, 103], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[81, 83, 82, 90, 92, 91], comm=[82]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[82, 86, 85, 91, 95, 94], comm=[82, 86, 85]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[81, 83, 82, 99, 101, 100], comm=[82]
+Anti-commutation between checks. X=[73, 77, 76, 82, 86, 85], Z=[82, 86, 85, 100, 104, 103], comm=[82, 86, 85]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[72, 74, 73, 81, 83, 82], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[73, 77, 76, 82, 86, 85], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[72, 74, 73, 99, 101, 100], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[73, 77, 76, 100, 104, 103], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[81, 83, 82, 90, 92, 91], comm=[90, 92, 91]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[82, 86, 85, 91, 95, 94], comm=[91]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[90, 92, 91, 99, 101, 100], comm=[90, 92, 91]
+Anti-commutation between checks. X=[72, 74, 73, 90, 92, 91], Z=[91, 95, 94, 100, 104, 103], comm=[91]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[72, 74, 73, 81, 83, 82], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[73, 77, 76, 82, 86, 85], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[72, 74, 73, 99, 101, 100], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[73, 77, 76, 100, 104, 103], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[81, 83, 82, 90, 92, 91], comm=[91]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[82, 86, 85, 91, 95, 94], comm=[91, 95, 94]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[90, 92, 91, 99, 101, 100], comm=[91]
+Anti-commutation between checks. X=[73, 77, 76, 91, 95, 94], Z=[91, 95, 94, 100, 104, 103], comm=[91, 95, 94]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[72, 74, 73, 81, 83, 82], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[73, 77, 76, 82, 86, 85], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[72, 74, 73, 90, 92, 91], comm=[72, 74, 73]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[73, 77, 76, 91, 95, 94], comm=[73]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[81, 83, 82, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[82, 86, 85, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[90, 92, 91, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[72, 74, 73, 99, 101, 100], Z=[91, 95, 94, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[72, 74, 73, 81, 83, 82], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[73, 77, 76, 82, 86, 85], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[72, 74, 73, 90, 92, 91], comm=[73]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[73, 77, 76, 91, 95, 94], comm=[73, 77, 76]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[81, 83, 82, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[82, 86, 85, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[90, 92, 91, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[73, 77, 76, 100, 104, 103], Z=[91, 95, 94, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[72, 74, 73, 81, 83, 82], comm=[81, 83, 82]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[73, 77, 76, 82, 86, 85], comm=[82]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[72, 74, 73, 90, 92, 91], comm=[90, 92, 91]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[73, 77, 76, 91, 95, 94], comm=[91]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[81, 83, 82, 99, 101, 100], comm=[81, 83, 82]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[82, 86, 85, 100, 104, 103], comm=[82]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[90, 92, 91, 99, 101, 100], comm=[90, 92, 91]
+Anti-commutation between checks. X=[81, 83, 82, 90, 92, 91], Z=[91, 95, 94, 100, 104, 103], comm=[91]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[72, 74, 73, 81, 83, 82], comm=[82]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[73, 77, 76, 82, 86, 85], comm=[82, 86, 85]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[72, 74, 73, 90, 92, 91], comm=[91]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[73, 77, 76, 91, 95, 94], comm=[91, 95, 94]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[81, 83, 82, 99, 101, 100], comm=[82]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[82, 86, 85, 100, 104, 103], comm=[82, 86, 85]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[90, 92, 91, 99, 101, 100], comm=[91]
+Anti-commutation between checks. X=[82, 86, 85, 91, 95, 94], Z=[91, 95, 94, 100, 104, 103], comm=[91, 95, 94]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[72, 74, 73, 81, 83, 82], comm=[81, 83, 82]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[73, 77, 76, 82, 86, 85], comm=[82]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[72, 74, 73, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[73, 77, 76, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[81, 83, 82, 90, 92, 91], comm=[81, 83, 82]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[82, 86, 85, 91, 95, 94], comm=[82]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[90, 92, 91, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[81, 83, 82, 99, 101, 100], Z=[91, 95, 94, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[72, 74, 73, 81, 83, 82], comm=[82]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[73, 77, 76, 82, 86, 85], comm=[82, 86, 85]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[72, 74, 73, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[73, 77, 76, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[81, 83, 82, 90, 92, 91], comm=[82]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[82, 86, 85, 91, 95, 94], comm=[82, 86, 85]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[90, 92, 91, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[82, 86, 85, 100, 104, 103], Z=[91, 95, 94, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[72, 74, 73, 90, 92, 91], comm=[90, 92, 91]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[73, 77, 76, 91, 95, 94], comm=[91]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[72, 74, 73, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[73, 77, 76, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[81, 83, 82, 90, 92, 91], comm=[90, 92, 91]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[82, 86, 85, 91, 95, 94], comm=[91]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[81, 83, 82, 99, 101, 100], comm=[99, 101, 100]
+Anti-commutation between checks. X=[90, 92, 91, 99, 101, 100], Z=[82, 86, 85, 100, 104, 103], comm=[100]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[72, 74, 73, 90, 92, 91], comm=[91]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[73, 77, 76, 91, 95, 94], comm=[91, 95, 94]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[72, 74, 73, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[73, 77, 76, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[81, 83, 82, 90, 92, 91], comm=[91]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[82, 86, 85, 91, 95, 94], comm=[91, 95, 94]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[81, 83, 82, 99, 101, 100], comm=[100]
+Anti-commutation between checks. X=[91, 95, 94, 100, 104, 103], Z=[82, 86, 85, 100, 104, 103], comm=[100, 104, 103]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[108, 110, 109, 171, 173, 172], comm=[108, 110, 109]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[109, 113, 112, 172, 176, 175], comm=[109]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[135, 137, 136, 108, 110, 109], comm=[108, 110, 109]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[136, 140, 139, 109, 113, 112], comm=[109]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[135, 137, 136, 162, 164, 163], comm=[162, 164, 163]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[136, 140, 139, 163, 167, 166], comm=[163]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[162, 164, 163, 171, 173, 172], comm=[162, 164, 163]
+Anti-commutation between checks. X=[108, 110, 109, 162, 164, 163], Z=[163, 167, 166, 172, 176, 175], comm=[163]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[108, 110, 109, 171, 173, 172], comm=[109]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[109, 113, 112, 172, 176, 175], comm=[109, 113, 112]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[135, 137, 136, 108, 110, 109], comm=[109]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[136, 140, 139, 109, 113, 112], comm=[109, 113, 112]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[135, 137, 136, 162, 164, 163], comm=[163]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[136, 140, 139, 163, 167, 166], comm=[163, 167, 166]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[162, 164, 163, 171, 173, 172], comm=[163]
+Anti-commutation between checks. X=[109, 113, 112, 163, 167, 166], Z=[163, 167, 166, 172, 176, 175], comm=[163, 167, 166]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[108, 110, 109, 162, 164, 163], comm=[108, 110, 109]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[109, 113, 112, 163, 167, 166], comm=[109]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[135, 137, 136, 108, 110, 109], comm=[108, 110, 109]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[136, 140, 139, 109, 113, 112], comm=[109]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[135, 137, 136, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[136, 140, 139, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[162, 164, 163, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[108, 110, 109, 171, 173, 172], Z=[163, 167, 166, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[108, 110, 109, 162, 164, 163], comm=[109]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[109, 113, 112, 163, 167, 166], comm=[109, 113, 112]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[135, 137, 136, 108, 110, 109], comm=[109]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[136, 140, 139, 109, 113, 112], comm=[109, 113, 112]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[135, 137, 136, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[136, 140, 139, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[162, 164, 163, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[109, 113, 112, 172, 176, 175], Z=[163, 167, 166, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[117, 119, 118, 198, 200, 199], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[118, 122, 121, 199, 203, 202], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[117, 119, 118, 207, 209, 208], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[118, 122, 121, 208, 212, 211], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[144, 146, 145, 198, 200, 199], comm=[144, 146, 145]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[145, 149, 148, 199, 203, 202], comm=[145]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[144, 146, 145, 207, 209, 208], comm=[144, 146, 145]
+Anti-commutation between checks. X=[117, 119, 118, 144, 146, 145], Z=[145, 149, 148, 208, 212, 211], comm=[145]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[117, 119, 118, 198, 200, 199], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[118, 122, 121, 199, 203, 202], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[117, 119, 118, 207, 209, 208], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[118, 122, 121, 208, 212, 211], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[144, 146, 145, 198, 200, 199], comm=[145]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[145, 149, 148, 199, 203, 202], comm=[145, 149, 148]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[144, 146, 145, 207, 209, 208], comm=[145]
+Anti-commutation between checks. X=[118, 122, 121, 145, 149, 148], Z=[145, 149, 148, 208, 212, 211], comm=[145, 149, 148]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[117, 119, 118, 144, 146, 145], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[118, 122, 121, 145, 149, 148], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[117, 119, 118, 207, 209, 208], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[118, 122, 121, 208, 212, 211], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[144, 146, 145, 198, 200, 199], comm=[198, 200, 199]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[145, 149, 148, 199, 203, 202], comm=[199]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[198, 200, 199, 207, 209, 208], comm=[198, 200, 199]
+Anti-commutation between checks. X=[117, 119, 118, 198, 200, 199], Z=[199, 203, 202, 208, 212, 211], comm=[199]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[117, 119, 118, 144, 146, 145], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[118, 122, 121, 145, 149, 148], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[117, 119, 118, 207, 209, 208], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[118, 122, 121, 208, 212, 211], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[144, 146, 145, 198, 200, 199], comm=[199]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[145, 149, 148, 199, 203, 202], comm=[199, 203, 202]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[198, 200, 199, 207, 209, 208], comm=[199]
+Anti-commutation between checks. X=[118, 122, 121, 199, 203, 202], Z=[199, 203, 202, 208, 212, 211], comm=[199, 203, 202]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[117, 119, 118, 144, 146, 145], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[118, 122, 121, 145, 149, 148], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[117, 119, 118, 198, 200, 199], comm=[117, 119, 118]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[118, 122, 121, 199, 203, 202], comm=[118]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[144, 146, 145, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[145, 149, 148, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[198, 200, 199, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[117, 119, 118, 207, 209, 208], Z=[199, 203, 202, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[117, 119, 118, 144, 146, 145], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[118, 122, 121, 145, 149, 148], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[117, 119, 118, 198, 200, 199], comm=[118]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[118, 122, 121, 199, 203, 202], comm=[118, 122, 121]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[144, 146, 145, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[145, 149, 148, 208, 212, 211], comm=[208, 212, 211]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[198, 200, 199, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[118, 122, 121, 208, 212, 211], Z=[199, 203, 202, 208, 212, 211], comm=[208, 212, 211]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[180, 182, 181, 126, 128, 127], comm=[126, 128, 127]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[181, 185, 184, 127, 131, 130], comm=[127]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[180, 182, 181, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[181, 185, 184, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[189, 191, 190, 126, 128, 127], comm=[126, 128, 127]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[190, 194, 193, 127, 131, 130], comm=[127]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[189, 191, 190, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[126, 128, 127, 153, 155, 154], Z=[190, 194, 193, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[180, 182, 181, 126, 128, 127], comm=[127]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[181, 185, 184, 127, 131, 130], comm=[127, 131, 130]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[180, 182, 181, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[181, 185, 184, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[189, 191, 190, 126, 128, 127], comm=[127]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[190, 194, 193, 127, 131, 130], comm=[127, 131, 130]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[189, 191, 190, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[127, 131, 130, 154, 158, 157], Z=[190, 194, 193, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[108, 110, 109, 162, 164, 163], comm=[108, 110, 109]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[109, 113, 112, 163, 167, 166], comm=[109]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[108, 110, 109, 171, 173, 172], comm=[108, 110, 109]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[109, 113, 112, 172, 176, 175], comm=[109]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[135, 137, 136, 162, 164, 163], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[136, 140, 139, 163, 167, 166], comm=[136]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[135, 137, 136, 171, 173, 172], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 108, 110, 109], Z=[136, 140, 139, 172, 176, 175], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[108, 110, 109, 162, 164, 163], comm=[109]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[109, 113, 112, 163, 167, 166], comm=[109, 113, 112]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[108, 110, 109, 171, 173, 172], comm=[109]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[109, 113, 112, 172, 176, 175], comm=[109, 113, 112]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[135, 137, 136, 162, 164, 163], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[136, 140, 139, 163, 167, 166], comm=[136, 140, 139]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[135, 137, 136, 171, 173, 172], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 109, 113, 112], Z=[136, 140, 139, 172, 176, 175], comm=[136, 140, 139]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[108, 110, 109, 162, 164, 163], comm=[162, 164, 163]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[109, 113, 112, 163, 167, 166], comm=[163]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[135, 137, 136, 108, 110, 109], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[136, 140, 139, 109, 113, 112], comm=[136]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[135, 137, 136, 171, 173, 172], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[136, 140, 139, 172, 176, 175], comm=[136]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[162, 164, 163, 171, 173, 172], comm=[162, 164, 163]
+Anti-commutation between checks. X=[135, 137, 136, 162, 164, 163], Z=[163, 167, 166, 172, 176, 175], comm=[163]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[108, 110, 109, 162, 164, 163], comm=[163]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[109, 113, 112, 163, 167, 166], comm=[163, 167, 166]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[135, 137, 136, 108, 110, 109], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[136, 140, 139, 109, 113, 112], comm=[136, 140, 139]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[135, 137, 136, 171, 173, 172], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[136, 140, 139, 172, 176, 175], comm=[136, 140, 139]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[162, 164, 163, 171, 173, 172], comm=[163]
+Anti-commutation between checks. X=[136, 140, 139, 163, 167, 166], Z=[163, 167, 166, 172, 176, 175], comm=[163, 167, 166]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[108, 110, 109, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[109, 113, 112, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[135, 137, 136, 108, 110, 109], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[136, 140, 139, 109, 113, 112], comm=[136]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[135, 137, 136, 162, 164, 163], comm=[135, 137, 136]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[136, 140, 139, 163, 167, 166], comm=[136]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[162, 164, 163, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[135, 137, 136, 171, 173, 172], Z=[163, 167, 166, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[108, 110, 109, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[109, 113, 112, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[135, 137, 136, 108, 110, 109], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[136, 140, 139, 109, 113, 112], comm=[136, 140, 139]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[135, 137, 136, 162, 164, 163], comm=[136]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[136, 140, 139, 163, 167, 166], comm=[136, 140, 139]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[162, 164, 163, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[136, 140, 139, 172, 176, 175], Z=[163, 167, 166, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[117, 119, 118, 144, 146, 145], comm=[144, 146, 145]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[118, 122, 121, 145, 149, 148], comm=[145]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[117, 119, 118, 198, 200, 199], comm=[198, 200, 199]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[118, 122, 121, 199, 203, 202], comm=[199]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[144, 146, 145, 207, 209, 208], comm=[144, 146, 145]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[145, 149, 148, 208, 212, 211], comm=[145]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[198, 200, 199, 207, 209, 208], comm=[198, 200, 199]
+Anti-commutation between checks. X=[144, 146, 145, 198, 200, 199], Z=[199, 203, 202, 208, 212, 211], comm=[199]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[117, 119, 118, 144, 146, 145], comm=[145]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[118, 122, 121, 145, 149, 148], comm=[145, 149, 148]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[117, 119, 118, 198, 200, 199], comm=[199]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[118, 122, 121, 199, 203, 202], comm=[199, 203, 202]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[144, 146, 145, 207, 209, 208], comm=[145]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[145, 149, 148, 208, 212, 211], comm=[145, 149, 148]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[198, 200, 199, 207, 209, 208], comm=[199]
+Anti-commutation between checks. X=[145, 149, 148, 199, 203, 202], Z=[199, 203, 202, 208, 212, 211], comm=[199, 203, 202]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[117, 119, 118, 144, 146, 145], comm=[144, 146, 145]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[118, 122, 121, 145, 149, 148], comm=[145]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[117, 119, 118, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[118, 122, 121, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[144, 146, 145, 198, 200, 199], comm=[144, 146, 145]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[145, 149, 148, 199, 203, 202], comm=[145]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[198, 200, 199, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[144, 146, 145, 207, 209, 208], Z=[199, 203, 202, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[117, 119, 118, 144, 146, 145], comm=[145]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[118, 122, 121, 145, 149, 148], comm=[145, 149, 148]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[117, 119, 118, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[118, 122, 121, 208, 212, 211], comm=[208, 212, 211]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[144, 146, 145, 198, 200, 199], comm=[145]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[145, 149, 148, 199, 203, 202], comm=[145, 149, 148]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[198, 200, 199, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[145, 149, 148, 208, 212, 211], Z=[199, 203, 202, 208, 212, 211], comm=[208, 212, 211]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[108, 110, 109, 162, 164, 163], comm=[162, 164, 163]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[109, 113, 112, 163, 167, 166], comm=[163]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[108, 110, 109, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[109, 113, 112, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[135, 137, 136, 162, 164, 163], comm=[162, 164, 163]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[136, 140, 139, 163, 167, 166], comm=[163]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[135, 137, 136, 171, 173, 172], comm=[171, 173, 172]
+Anti-commutation between checks. X=[162, 164, 163, 171, 173, 172], Z=[136, 140, 139, 172, 176, 175], comm=[172]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[108, 110, 109, 162, 164, 163], comm=[163]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[109, 113, 112, 163, 167, 166], comm=[163, 167, 166]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[108, 110, 109, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[109, 113, 112, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[135, 137, 136, 162, 164, 163], comm=[163]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[136, 140, 139, 163, 167, 166], comm=[163, 167, 166]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[135, 137, 136, 171, 173, 172], comm=[172]
+Anti-commutation between checks. X=[163, 167, 166, 172, 176, 175], Z=[136, 140, 139, 172, 176, 175], comm=[172, 176, 175]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[126, 128, 127, 153, 155, 154], comm=[126, 128, 127]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[127, 131, 130, 154, 158, 157], comm=[127]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[180, 182, 181, 153, 155, 154], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[181, 185, 184, 154, 158, 157], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[180, 182, 181, 189, 191, 190], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[181, 185, 184, 190, 194, 193], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[189, 191, 190, 126, 128, 127], comm=[126, 128, 127]
+Anti-commutation between checks. X=[180, 182, 181, 126, 128, 127], Z=[190, 194, 193, 127, 131, 130], comm=[127]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[126, 128, 127, 153, 155, 154], comm=[127]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[127, 131, 130, 154, 158, 157], comm=[127, 131, 130]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[180, 182, 181, 153, 155, 154], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[181, 185, 184, 154, 158, 157], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[180, 182, 181, 189, 191, 190], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[181, 185, 184, 190, 194, 193], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[189, 191, 190, 126, 128, 127], comm=[127]
+Anti-commutation between checks. X=[181, 185, 184, 127, 131, 130], Z=[190, 194, 193, 127, 131, 130], comm=[127, 131, 130]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[126, 128, 127, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[127, 131, 130, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[180, 182, 181, 126, 128, 127], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[181, 185, 184, 127, 131, 130], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[180, 182, 181, 189, 191, 190], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[181, 185, 184, 190, 194, 193], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[189, 191, 190, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[180, 182, 181, 153, 155, 154], Z=[190, 194, 193, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[126, 128, 127, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[127, 131, 130, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[180, 182, 181, 126, 128, 127], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[181, 185, 184, 127, 131, 130], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[180, 182, 181, 189, 191, 190], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[181, 185, 184, 190, 194, 193], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[189, 191, 190, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[181, 185, 184, 154, 158, 157], Z=[190, 194, 193, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[180, 182, 181, 126, 128, 127], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[181, 185, 184, 127, 131, 130], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[180, 182, 181, 153, 155, 154], comm=[180, 182, 181]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[181, 185, 184, 154, 158, 157], comm=[181]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[189, 191, 190, 126, 128, 127], comm=[189, 191, 190]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[190, 194, 193, 127, 131, 130], comm=[190]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[189, 191, 190, 153, 155, 154], comm=[189, 191, 190]
+Anti-commutation between checks. X=[180, 182, 181, 189, 191, 190], Z=[190, 194, 193, 154, 158, 157], comm=[190]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[180, 182, 181, 126, 128, 127], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[181, 185, 184, 127, 131, 130], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[180, 182, 181, 153, 155, 154], comm=[181]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[181, 185, 184, 154, 158, 157], comm=[181, 185, 184]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[189, 191, 190, 126, 128, 127], comm=[190]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[190, 194, 193, 127, 131, 130], comm=[190, 194, 193]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[189, 191, 190, 153, 155, 154], comm=[190]
+Anti-commutation between checks. X=[181, 185, 184, 190, 194, 193], Z=[190, 194, 193, 154, 158, 157], comm=[190, 194, 193]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[126, 128, 127, 153, 155, 154], comm=[126, 128, 127]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[127, 131, 130, 154, 158, 157], comm=[127]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[180, 182, 181, 126, 128, 127], comm=[126, 128, 127]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[181, 185, 184, 127, 131, 130], comm=[127]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[180, 182, 181, 189, 191, 190], comm=[189, 191, 190]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[181, 185, 184, 190, 194, 193], comm=[190]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[189, 191, 190, 153, 155, 154], comm=[189, 191, 190]
+Anti-commutation between checks. X=[189, 191, 190, 126, 128, 127], Z=[190, 194, 193, 154, 158, 157], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[126, 128, 127, 153, 155, 154], comm=[127]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[127, 131, 130, 154, 158, 157], comm=[127, 131, 130]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[180, 182, 181, 126, 128, 127], comm=[127]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[181, 185, 184, 127, 131, 130], comm=[127, 131, 130]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[180, 182, 181, 189, 191, 190], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[181, 185, 184, 190, 194, 193], comm=[190, 194, 193]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[189, 191, 190, 153, 155, 154], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 127, 131, 130], Z=[190, 194, 193, 154, 158, 157], comm=[190, 194, 193]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[126, 128, 127, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[127, 131, 130, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[180, 182, 181, 153, 155, 154], comm=[153, 155, 154]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[181, 185, 184, 154, 158, 157], comm=[154]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[180, 182, 181, 189, 191, 190], comm=[189, 191, 190]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[181, 185, 184, 190, 194, 193], comm=[190]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[189, 191, 190, 126, 128, 127], comm=[189, 191, 190]
+Anti-commutation between checks. X=[189, 191, 190, 153, 155, 154], Z=[190, 194, 193, 127, 131, 130], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[126, 128, 127, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[127, 131, 130, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[180, 182, 181, 153, 155, 154], comm=[154]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[181, 185, 184, 154, 158, 157], comm=[154, 158, 157]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[180, 182, 181, 189, 191, 190], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[181, 185, 184, 190, 194, 193], comm=[190, 194, 193]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[189, 191, 190, 126, 128, 127], comm=[190]
+Anti-commutation between checks. X=[190, 194, 193, 154, 158, 157], Z=[190, 194, 193, 127, 131, 130], comm=[190, 194, 193]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[117, 119, 118, 198, 200, 199], comm=[198, 200, 199]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[118, 122, 121, 199, 203, 202], comm=[199]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[117, 119, 118, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[118, 122, 121, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[144, 146, 145, 198, 200, 199], comm=[198, 200, 199]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[145, 149, 148, 199, 203, 202], comm=[199]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[144, 146, 145, 207, 209, 208], comm=[207, 209, 208]
+Anti-commutation between checks. X=[198, 200, 199, 207, 209, 208], Z=[145, 149, 148, 208, 212, 211], comm=[208]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[117, 119, 118, 198, 200, 199], comm=[199]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[118, 122, 121, 199, 203, 202], comm=[199, 203, 202]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[117, 119, 118, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[118, 122, 121, 208, 212, 211], comm=[208, 212, 211]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[144, 146, 145, 198, 200, 199], comm=[199]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[145, 149, 148, 199, 203, 202], comm=[199, 203, 202]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[144, 146, 145, 207, 209, 208], comm=[208]
+Anti-commutation between checks. X=[199, 203, 202, 208, 212, 211], Z=[145, 149, 148, 208, 212, 211], comm=[208, 212, 211]
+Final Code parameters: n=216, k=-92
