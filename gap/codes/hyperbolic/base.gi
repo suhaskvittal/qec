@@ -19,7 +19,36 @@ ComputeIndicatorVectorsSC :=
         return v_check_list;
     end;
 
-ComputeIndicatorVectorsCC :=
+ComputeIndicatorVectorsCC1 :=
+    function(all_elements, face_cosets, edge_cosets)
+        local face_list, f, vertices, e, tmp, x, v;
+
+        
+        face_list := [];
+        for f in face_cosets do
+            vertices := [];
+            for e in edge_cosets do
+                tmp := AsList(e);
+                if Length(Intersection(AsList(f), tmp)) = 2 then
+                    for x in tmp do
+                        AddSet(vertices, x);
+                    od;
+                fi;
+            od;
+            v := [];
+            for x in all_elements do
+                if x in vertices then
+                    Add(v, One(GF(2)));
+                else
+                    Add(v, Zero(GF(2)));
+                fi;
+            od;
+            Add(face_list, v);
+        od;
+        return face_list;
+    end;
+
+ComputeIndicatorVectorsCC2 :=
     function(G, faces)
         local check_list, check, f, x;
 
@@ -66,10 +95,10 @@ TranslateFaces :=
     end;
 
 CodeFilename :=
-    function(folder, n, k)
+    function(folder, n, k, v)
         local filename;
         filename := Concatenation(folder, "/", 
-                                    String(n), "_", String(k), ".txt");
+                                    String(n), "_", String(k), ".", String(v), ".txt");
         return filename;
     end;
 
@@ -180,7 +209,7 @@ FaceFilename :=
         return filename;
     end;
 
-WriteFacesToFile :=
+WriteFacesToFile2 :=
     function(filename, faces)
         local fout, vf, i, line;
 
@@ -200,4 +229,3 @@ WriteFacesToFile :=
             IO_WriteLine(fout, line);
         od;
     end;
-

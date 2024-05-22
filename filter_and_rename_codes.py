@@ -94,13 +94,24 @@ for f in _files:
 # and (2) remove all files with worse distance than a code with fewer qubits.
 print('----------------------')
 files.sort(key=lambda x: x[1]) 
-dzmin, dxmin = dmin, dmin
+p_dzmin, p_dxmin = dmin, dmin
+c_dzmin, c_dxmin = dmin, dmin
+c_n, p_n = 0, 0
+version = 0
 for (f, n, k, dx, dz) in files:
-    if dz < dzmin and dx < dxmin and not no_delete:
+    if c_n != n:
+        p_dzmin = c_dzmin
+        p_dxmin = c_dxmin
+        p_n = c_n
+        c_n = n
+        version = 0
+    else:
+        version += 1
+    if dz < p_dzmin and dx < p_dxmin and not no_delete:
         os.remove(os.path.join(code_folder, f))
         print(f'Deleted {f}')
     else:
-        dzmin, dxmin = max(dzmin, dz), max(dxmin, dx)
-        os.rename(os.path.join(code_folder, f), f'{code_folder}/{n}_{k}_{dx}_{dz}.txt')
+        c_dzmin, c_dxmin = max(c_dzmin, dz), max(c_dxmin, dx)
+        os.rename(os.path.join(code_folder, f), f'{code_folder}/{n}_{k}_{dx}_{dz}.{version}.txt')
         print(f'Renamed {f} to {n}_{k}_{dx}_{dz}')
     
