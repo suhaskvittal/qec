@@ -12,6 +12,7 @@
 Read("gap/utils/qec.gi");
 Read("gap/utils/operations.gi");
 Read("gap/codes/hyperbolic/base.gi");
+Read("gap/codes/hyperbolic/xforms.gi");
 
 LoadPackage("LINS");
 
@@ -31,6 +32,8 @@ G := Grp(LinsRoot(gr));
 # Make folder for codes.
 if L = 1 then
     code_folder := Concatenation("codes/hycc/", String(R), "_", String(S), "_", String(T));
+elif L = -1 then
+    code_folder := Concatenation("codes/sthycc/", String(R), "_", String(S), "_", String(T));
 else
     code_folder := Concatenation("codes/shycc/", String(R), "_", String(S), "_", String(T), "_", String(L));
 fi;
@@ -50,7 +53,7 @@ while i <= Length(lins) do
     else
         version := 1;
     fi;
-    Print("Index: ", Index(lins[i]), "\n");
+    Print("Index: ", Index(lins[i]), ", i = ", i, "\n");
 
     H := Grp(lins[i]);
     # Compute quotient group.
@@ -97,122 +100,12 @@ while i <= Length(lins) do
 
     # Compute semi-hyperbolic tiling if L > 1.
     if L > 1 then
-        new_faces := [];
-        # Create base vector for ease of computation
-        bv := [];
-        for i in [1..(L^2*n_data)] do
-            Add(bv, Zero(GF(2)));
-        od;
-        # Replace each face in the current tiling with a new face.
-        all_faces := [r_faces, g_faces, b_faces];
-        for k in [1..3] do
-            for f in all_faces[k] do
-                nf := ShallowCopy(bv);
-                for x in f do
-                    q := Position(all_elements, x);
-                    q := (q-1)*L^2 + 1;
-                    if k = 1 then
-                        nf[q] := One(GF(2));
-                    elif k = 2 then
-                        nf[q+(L-1)^2] := One(GF(2));
-                    else
-                        nf[q+L^2-1] := One(GF(2));
-                    fi;
-                od;
-                Add(new_faces, nf);
-            od;
-        od;
-        Print("Type1 faces: ", Length(new_faces), "\n");
-        # Create bulk stabilizers for each original element.
-        for _q in [1..n_data] do
-            q := (_q-1)*L^2 + 1;
-            for r in [2..L-1] do
-                for ii in [1..(r-1)] do
-                    i := 2*ii-1;
-                    q1 := q + (r-1)^2 + (i-1);
-                    q2 := q1+1; q3 := q1+2;
-                    q4 := q + r^2 + i;
-                    q5 := q4+1; q6 := q4+2;
-                    nf := ShallowCopy(bv);
-                    for j in [q1,q2,q3,q4,q5,q6] do
-                        nf[j] := One(GF(2));
-                    od;
-                    Add(new_faces, nf);
-                od;
-            od;
-        od;
-        # Create boundary stabilizers for each edge.
-        edge_lists := [ a_edges, b_edges, c_edges ];
-        for k in [1..3] do
-            for e in edge_lists[k] do
-                ele := AsList(e);
-                # If we cannot find two incident faces, then ignore the edge.
-#               cnt := 0;
-#               for f in face_cosets do
-#                   if Length(Intersection(AsList(f), ele)) = 2 then
-#                       cnt := cnt+1;
-#                   fi;
-#               od;
-#               if cnt < 2 then continue; fi;
-                x := ele[1]; y := ele[2];
-                qx := Position(all_elements, x); qy := Position(all_elements, y);
-                qx := (qx-1)*L^2 + 1;
-                qy := (qy-1)*L^2 + 1;
-                if k = 1 then
-                    for r in [1..(L-1)] do
-                        q1 := qx + (r-1)^2;
-                        q2 := qx + r^2;
-                        q3 := q2+1;
-                        q4 := qy + (r-1)^2;
-                        q5 := qy + r^2;
-                        q6 := q5+1;
-                        nf := ShallowCopy(bv);
-                        for i in [q1,q2,q3,q4,q5,q6] do
-                            nf[i] := One(GF(2));
-                        od;
-                        Add(new_faces, nf);
-                    od;
-                elif k = 2 then
-                    for r in [1..(L-1)] do
-                        q1 := qx + r^2-1;
-                        q2 := qx + (r+1)^2-1;
-                        q3 := q2-1;
-                        q4 := qy + r^2-1;
-                        q5 := qy + (r+1)^2-1;
-                        q6 := q5-1;
-                        nf := ShallowCopy(bv);
-                        for i in [q1,q2,q3,q4,q5,q6] do
-                            nf[i] := One(GF(2));
-                        od;
-                        Add(new_faces, nf);
-                    od;
-                else
-                    m := 2*L-1;
-                    for c in [1..(m-1)/2] do
-                        q1 := qx + (L-1)^2 + 2*(c-1);
-                        q2 := q1+1; q3 := q1+2;
-                        q4 := qy + (L-1)^2 + 2*(c-1);
-                        q5 := q4+1; q6 := q4+2;
-                        nf := ShallowCopy(bv);
-                        for i in [q1,q2,q3,q4,q5,q6] do
-                            nf[i] := One(GF(2));
-                        od;
-                        Add(new_faces, nf);
-                    od;
-                fi;
-            od;
-        od;
-        faces := new_faces;
-        # Check if any faces anticommute.
-        for i in [1..Length(faces)] do
-            f1 := faces[i];
-            for j in [i+1..Length(faces)] do
-                f2 := faces[j];
-                if not AreCommuting(f1, f2) then
-                    Print("Faces ", i, " and ", j, " anticommute\n");
-                fi;
-            od;
-        od;
+        faces := HiggottSemiHyperbolic(
+                    n_data, L, all_elements,
+                    r_faces, g_faces, b_faces,
+                    a_edges, b_edges, c_edges);
+    elif L = -1 then
+        faces := SteaneSemiHyperbolic(n_data, all_elements, r_faces, g_faces, b_faces);
     else 
         faces := ComputeIndicatorVectorsCC1(all_elements, face_cosets, edge_cosets);
     fi;
@@ -220,7 +113,11 @@ while i <= Length(lins) do
     checks := ComputeStabilizerGenerators(faces);
     ops := CssLXZOperators(checks, checks);
 
-    n_data := L^2 * n_data;
+    if L >= 1 then
+        n_data := L^2 * n_data;
+    elif L = -1 then
+        n_data := 7 * n_data;
+    fi;
     n_checks := 2*Length(checks);
     n_ops := Length(ops);
     n_log := n_data - n_checks;
@@ -231,6 +128,21 @@ while i <= Length(lins) do
     Print("\tChecks: ", n_checks, "\n");
     Print("\tOperators: ", n_ops, "\n");
     Print("\t\tMin weight: ", d, "\n");
+    if L = -1 then
+#       # Report on gauge operators.
+#       gauges := SteaneSHGetGaugeOperators(n_data, all_elements, r_faces, g_faces, b_faces);
+#       gaf := [];
+#       Append(gaf, gauges);
+#       Append(gaf, checks);
+#       VerifyComm(gaf);
+#       n_log_left := 0;
+#       for opv in ops do
+#           if All(List(gauges, x -> AreCommuting(opv, x))) then
+#               n_log_left := n_log_left+1;
+#           fi;
+#       od;
+#       Print("\tLogical qubits with gauge operators: ", n_log_left, "\n");
+    fi;
 
     WriteCodeToFile(CodeFilename(code_folder, n_data, n_log, version),
                         checks,
